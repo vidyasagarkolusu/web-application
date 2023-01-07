@@ -1,40 +1,13 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.techworldwitmurali</groupId>
-  <artifactId>Java-Projects</artifactId>
-  <packaging>jar</packaging>
+  <groupId>com.techworldwithmurali</groupId>
+  <artifactId>web-application</artifactId>
+  <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>Java-Project</name>
+  <name>web-application Maven Webapps</name>
   <url>http://maven.apache.org</url>
-  <parent>
-    <groupId>org.apache</groupId>
-    <artifactId>apache</artifactId>
-    <version>27</version>
-    <relativePath>../asf/pom.xml</relativePath>
-  </parent>
-  <modules>
-    <module>module1</module>
-    <module>module2</module>
-  </modules>
-  <properties>
-     <version>3.01 </version>
-    <javaVersion>8</javaVersion>
-    <classWorldsVersion>2.6.0</classWorldsVersion>
-    <commonsCliVersion>1.5.0</commonsCliVersion>
-    <mockitoVersion>3.2.0</mockitoVersion>
-    <maven.site.path>ref/4-LATEST</maven.site.path>
-    <project.build.outputTimestamp>2022-10-14T23:41:39Z</project.build.outputTimestamp>
-  </properties>
-    <repositories>
-    <repository>
-      <id>my-internal-site</id>
-      <url>https://myserver/repo</url>
-    </repository>
-  </repositories>
-
-  <dependencyManagement>
-    <dependencies>
+  <dependencies>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -42,15 +15,17 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-      </dependencyManagement>
+  <build>
+    <finalName>web-application</finalName>
+  </build>
     <distributionManagement>
       <snapshotRepository>
         <id>nexus-snapshots</id>
-        <url>http://65.2.71.11:8081/repository/maven-snapshots/</url>
+        <url>http://65.2.71.11:8081//repository/maven-snapshots/</url>
       </snapshotRepository>
       <repository>
         <id>nexus-releases</id>
-        <url>http://65.2.71.11:8081/repository/maven-releases/</url>
+        <url>http://65.2.71.11:8081//repository/maven-releases/</url>
       </repository>
     </distributionManagement>
 </project>
