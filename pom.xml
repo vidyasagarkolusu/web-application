@@ -16,16 +16,6 @@ project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2
     </dependency>
   </dependencies>
   <build>
-    <finalName>web-application</finalName>
+    <finalName>web-application war file</finalName>
   </build>
-    <distributionManagement>
-      <snapshotRepository>
-        <id>nexus-snapshots</id>
-        <url>http://65.2.71.11:8081//repository/maven-snapshots/</url>
-      </snapshotRepository>
-      <repository>
-        <id>nexus-releases</id>
-        <url>http://65.2.71.11:8081//repository/maven-releases/</url>
-      </repository>
-    </distributionManagement>
 </project>
